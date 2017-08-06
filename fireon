@@ -1,0 +1,1386 @@
+#!/bin/bash
+RED='\e[41m'
+CYAN='\e[46m'
+NC='\e[0m'
+#echo "  Local -------------------------------   Aguarde ------------------------------ "
+clear
+echo "Hello $(whoami) !================================= Qualquer tecla para continuar ========================================" 
+screen -d -m mpv http://los.cdnstream.com:80/crs64k
+aafire
+sleep 5
+# Especificando o WEB a ser utilizado.
+PLAYER="web"
+#axzzcs"
+# Verificando se o $sistema
+if [ -e $exploit ]; then
+    # parando a sessão $sistema
+    if [ "$(pidof exploit)" ]; then
+        killall exploit
+    fi
+    while true; do
+    clear
+    echo "                                                                                      | Instale dependencias inicial para que o script funcione corretamente    "
+    echo "  (                                 (                                                 |  --------------------------------------------------------------------  " 
+    echo "  )\ )                       )      )\ )                                              | | "  
+    echo "(()/(     (   (          ( /(     (()/(  (   (      (                                 | |   "  
+    echo " /(_)) (  )(  )\     )   )\())___  /(_)) )\  )(    ))\                                | |"  
+    echo "(_))   )\(()\((_) /(/(  (_))/|___|(_))_|((_)(()\  /((_)                  ================================== "    
+    echo "/ __| ((_)((_)(_)((_)_\ | |_      | |_   (_) ((_)(_))                     https://terminalclub.github.io   " 
+    echo "\__ \/ _|| _|| ||  _ \)|  _|      | __|  | || _|/ -_)                    =================================="   
+    echo "|___/\__||_|  |_|| .__/  \__|     |_|    |_||_|  \___|   " 
+    echo "                |_|                                       " 
+    echo " ·                                                   ·"
+    echo -e " · $CYAN[PENTEST]$NC , $CYAN[LINUX]$NC ,  ==============================================================================  $CYAN[Ctrl]+[c]$NC SAI ·"
+    echo " ·····················································"
+    echo ""
+    echo " ·····················································"
+    echo -e " ·  $BLUE  1 $NC  PENTEST   $BLUE  2 $NC  LINUX  $BLUE  3 $NC  CHEAT-COMANDOS   ·"
+    echo " ·····················································"
+    echo ""
+    echo ""
+    read choix
+    case $choix in
+        1) 
+clear; tput cup 8 8; for i in $(seq 1 10); do echo -n "$((11-$i)) ";sleep 1; done; tput cup 10 8; echo -e "DONE\n\n"
+tput setf 4
+killall mpv 
+# Esquema de cores
+RED='\e[41m'
+BLUE='\e[44m'
+CYAN='\e[46m'
+NC='\e[0m'
+
+# Linux.
+PLAYER="PLOIT"
+#linux"
+
+# linux
+if [ -e $exploit ]; then
+    # parando a sessão $linux
+    if [ "$(pidof exploit)" ]; then
+        killall exploit
+    fi
+    while true; do
+    clear
+    echo " "
+    echo " " 
+    echo "                                                                "
+    echo -e " · $NC                       SCRIPT-FIRE ,,    "                          
+    echo " ·····················································"
+    echo ""
+    echo " ·····················································"
+    echo -e " ·  $BLUE  1 $NC  ATUALIZAR(recomendado)   $BLUE  2 $NC DEPENDENCIAS python(recomendado)  $BLUE  3 $NC  INSTALL FERRAMENTAS  $BLUE  4 $NC VOLTAR  ·"
+    echo " ·····················································"
+    echo ""
+    echo ""
+    read choix
+    case $choix in
+        1) 
+         echo " Atenção .. ao executar esta opição sera instalado automaticamete as ferramentas nativas do sistema "
+         echo " Basta procurar no terminal ou no gerenciador de menu. As ferramentas externas estara na opição Install ferramentas"
+         echo " Ferramenta nativas são .. aircrack - reaver-wifite-kismet-nmap-nikto-wireshark-znmap-hidra-gtk-medusa-wapiti-tshark-dansguardian"
+         echo " Obs  Algumas ferramentas de rede pedira nas instalação a execução como root .. opite pelo opiçao.  NÂO"
+         echo "Aviso :Instalação demorada .Importante ter uma boa conexão         Confirmar?... (s/n)"
+         read CONFIRMA
+
+case $CONFIRMA in 
+    "s")
+        # ...
+        sleep 2s && notify-send "Ok" "Aguarde ......"
+        sudo apt-get update -y
+        sudo apt-get upgrade -y
+        for i in `cat setup.txt`; do apt-get install -y $i; done
+        echo "  ========================MODULOS node.js  ==============  nmp ======================="
+        sleep 5
+        sudo apt-get install nodejs npm
+        sudo apt-get install nodejs-legacy
+        gem bundle install
+        #criando diretorio firetools
+        mkdir /opt/firetools
+        # Instalando mdk3         
+        cd /opt/firetools
+        sleep 2s && notify-send "OK" "Configurando mdk3 pacote aicrack"
+        wget https://www.dropbox.com/s/gyk0vzuqomctgec/mdk3.tar.gz?dl=0
+        tar -vzxf mdk3.tar.gz?dl=0
+        cd mdk3
+        make
+        sudo make install
+        cd /opt/firetools
+        rm -R mdk3.tar.gz?dl=0
+        # Instalando bully
+        cd /opt/firetools
+        apt-get install libssl1.0-dev
+        sleep 2s && notify-send "OK" "Configurando bully pacote aicrack"
+        git clone https://github.com/aanarchyy/bully
+        cd bully*/
+        cd src/
+        make
+        sudo make install
+        #instalando more-secrets
+        cd /opt/firetools
+        git clone https://github.com/bartobri/no-more-secrets.git
+        cd ./no-more-secrets
+        make
+        sudo make install
+        #wget https://www.dropbox.com/s/wjiq5ozzmm4pnjk/ban?dl=0
+        #mv ban?dl=0 ban
+        sleep 2s && notify-send "OK" "Atualização completada"
+        echo " Limpando ..........."
+        sudo apt-get autoremove
+        git clone https://github.com/wiire/pixiewps
+        cd pixiewps*/
+        cd src/
+        make
+        sudo make install
+        #install lolcat
+        cd /opt
+        wget https://github.com/busyloop/lolcat/archive/master.zip
+        unzip master.zip
+        cd lolcat-master/bin
+        gem install lolcat
+        cd /opt
+        rm -R master.zip
+        apt-get autoremove
+        sleep 5   
+        wget https://www.dropbox.com/s/aj0iiy7wom2ijqq/sheat?dl=0
+        mv sheat?dl=0 sheat
+        mv sheat .sheat
+      ;;  
+
+    "n")
+        echo " cancelando ....."
+        sleep 5
+        # ...           
+    ;;
+
+    *)
+        echo  "Opção inválida."
+    ;;
+esac
+
+           ;;
+        2)
+           echo "Atualizar Python  Dependencias?       Confirmar?               ... (s/n)"
+read CONFIRMA
+
+case $CONFIRMA in 
+    "s")
+        # ...
+     
+#pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
+sleep 2s && notify-send "Ok" "Aguarde ......"
+for i in `cat mk.txt`; do pip install $i; done
+wget https://github.com/busyloop/lolcat/archive/master.zip
+unzip master.zip
+cd lolcat-master/bin
+gem install lolcat
+apt-get install python3-setuptools
+easy_install3 pip
+sleep 2s && notify-send "Ok" "Instalaçõa completada ......"
+    ;;
+
+    "n")
+        echo " cancelando ........"
+        sleep 5
+        # ...           
+    ;;
+
+    *)
+        echo  "Opção inválida."
+    ;;
+esac
+         ;;
+        3) tput setf 4
+           echo "========================================LEIA-ME=========================================== "
+           echo " #########################################################################################  "
+           echo " #1 Atençao   Todas ferramentas serão instaladas no diretorio  /opt/firetools/            # "   
+           echo " #2 Verificar arquitetura do seu pc .Algumas ferramentas estarão em 64 e 32 Bits          #  "
+           echo " #3 O usuario devera entrar neste diretorio e executar as ferramentas via terminal        # "
+           echo " #4 Ferramentas nativas do Linux poderão ser instaladas na Atualização inicial            #"
+           echo " #5 Qualquer duvida sobre estas ferramentas procure nos furuns,grupos,google ..etc ..     # "
+           echo " ######################################################################################### "   
+           echo " #6 >>>>>>>     Copiar e Colar (recomendado)  ao escolher a ferramenta <<<<<<<<<<<<<<<<<<<<"
+           echo " ##########################################################################################"
+          p(){ c=$(($(tput cols)-3));j=$(($1*c/100)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=100; i++));do p i;done;echo
+           read
+           clear
+           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/"
+           read CONFIRMA
+
+case $CONFIRMA in 
+       "sqlmap")
+        cd /opt/firetools
+        git clone git://github.com/sqlmapproject/sqlmap.git
+        echo   Ok    instalando  execute  cd /opt/firetools/sqlmap | lolcat -a -d 50
+     echo " Ok  "
+     read
+     ;;  
+    "metasploit64x")
+     cd /opt/
+     wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run
+     echo  Atenção deixar metasploit na pasta padrão na instalaçao modo grafico >>  /opt/metasploit/ | lolcat -a -d 50  
+     sleep 5
+     chmod +x metasploit-latest-linux-x64-installer.run
+     ./metasploit-latest-linux-x64-installer.run
+     echo  Execute como root  msfconsole | lolcat -a -d 50
+     echo " Ok  "
+     read   
+     echo " Lipar diretorio  ....  Ok"
+     echo " Ok  "
+     rm -R metasploit-latest-linux-x64-installer.run
+     read   
+     p(){ c=$(($(tput cols)-3));j=$(($1*c/250)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=250; i++));do p i;done;echo
+     rm -R metasploit-latest-linux-x64-installer.run 
+     ;;
+     "metasploit32x")
+      cd /opt/
+      wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-installer.run
+      echo Atenção deixar metasploit na pasta padrão na instalaçao modo grafico >>  /opt/metasploit/ | lolcat -a -d 50 
+      sleep 5
+      chmod +x metasploit-latest-linux-installer.run
+      /metasploit-latest-linux-installer.run
+      echo "Execute como root >> # msfconsole "
+      echo " Ok  "
+      read
+      echo" Limpar diretorio .. ok"
+     rm -R metasploit-latest-linux-installer.run
+     p(){ c=$(($(tput cols)-3));j=$(($1*c/250)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=250; i++));do p i;done;echo
+     rm -R metasploit-latest-linux-installer.run
+     ;;
+     "torbrowser64x") 
+      echo  Tor sera baixado na sua pasta home | lolcat -a -d 50
+      sleep -5     
+      wget https://dist.torproject.org/torbrowser/6.0.8/tor-browser-linux64-6.0.8_pt-PT.tar.xz -O tor-browser.tar.xz
+      tar -xvJf tor-browser.tar.xz
+      echo Entre no diretorio /opt/firetools/ e execute steart-tor-browser .. Ou crie um link no seu desktop | lolcat -a -d 50
+      echo" Ok  "
+      read
+      echo Limpar diretorio .. ok | lolcat -a -d 50
+      echo " Ok  "
+      read
+      p(){ c=$(($(tput cols)-3));j=$(($1*c/250)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=250; i++));do p i;done;echo
+     rm -R tor-browser.tar.xz
+    ;;
+    "torbrowser32x")
+     echo  Tor sera baixado na sua pasta home | lolcat -a -d 50
+     sleep -5
+     wget https://dist.torproject.org/torbrowser/6.0.8/tor-browser-linux32-6.0.8_pt-PT.tar.xz -O tor-browser.tar.xz
+     tar -xvJf tor-browser.tar.xz
+     echo  Entre no diretorio /opt/firetools/ e execute steart-tor-browser  | lolcat -a -d 50
+     echo " Ok  "
+     read
+     echo Limpar diretorio .. ok | lolcat -a -d 50
+     echo " Ok  "
+     read
+     rm -R tor-browser.tar.xz
+;;
+ "uniscan")
+ cd /opt/firetools
+ wget https://ufpr.dl.sourceforge.net/project/uniscan/6.2/uniscan6.2.tar.gz
+ tar -vzxf uniscan6.2.tar.gz
+ mv uniscan6.2 uniscan
+ sleep 2s && notify-send execute ..cd /opt/firetools/uniscan  #perl uniscan.pl"
+ echo " Ok  "
+ read
+ echo  Limpar diretorio | lolcat -a -d 50
+ echo " Ok  "
+ read
+ rm -R uniscan6.2.tar.gz
+ ;;
+"fluxion")
+cd /opt/firetools
+git clone https://github.com/MuhammadOmar125/fluxion.git
+cd fluxion
+chmod +x fluxion
+echo Instalação completada   execute   /opt/firetools/fluxion  | lolcat -a -d 50      
+sleep 5
+echo " Ok  "
+ read
+ ;;
+ "setoolkit")
+ cd /opt/firetools
+ git clone https://github.com/trustedsec/social-engineer-toolkit/ set/
+ echo Instalação completada  execute  /opt/firetools/set  setoolkit | lolcat -a -d 50
+ sleep 10
+ echo " Ok  "
+ read
+ ;;
+"beef")
+ cd /opt/firetools
+ git clone https://github.com/beefproject/beef.git
+ cd beef
+ bundle install
+ echo Instalação completada  execute  /opt/firetools/beef  ./beef | lolcat -a -d 50
+ sleep 10
+ echo " Ok  "
+ read
+;;
+ "maltego")
+ cd /opt/firetools
+ wget https://www.dropbox.com/s/oteqtr41hhzzlmr/Maltego.deb?dl=0
+ sudo dpkg -i Maltego.deb?dl=0
+ echo Instalação completada  execute   maltego vi terminal ou no gerenciador de aplicativos | lolcat -a -d 50
+ sleep 5
+ echo " Ok  "
+ read
+ sleep 5
+ rm -R Maltego.deb?dl=0
+ ;;
+"backdoor-factory")
+cd /opt/firetools
+git clone https://github.com/secretsquirrel/the-backdoor-factory.git
+cd the-backdoor-factorysudo python setup.py install
+./install.sh
+echo Instalação completada  execute  python backdoor.py | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"recon-ng")
+cd /opt/firetools
+git clone https://bitbucket.org/LaNMaSteR53/recon-ng/
+cd recon-ng
+echo Instalação completada  execute recon-ng | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"veil-evasion")
+cd /opt/firetools
+git clone https://github.com/Veil-Framework/Veil-Evasion.git
+cd Veil-Evasion
+cd setup
+./setup.sh
+echo   Ok  Instalado | lolcat -a -d 50
+read
+;;
+"wifiphisher")
+cd /opt/firetools
+git clone https://github.com/sophron/wifiphisher.git
+cd wifiphisher
+sudo python setup.py install
+;;
+"Brutal")
+cd /opt/firetools
+git clone https://github.com/Screetsec/Brutal.git 
+cd Brutal 
+chmod +x Brutal.sh 
+./Brutal.sh
+echo  Instalação completada | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"slowloris")
+cd /opt/firetools
+git clone https://github.com/gkbrk/slowloris.git
+sudo pip3 install PySocks
+echo  Instalação completada   execute python3 slowloris.py  opções | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"wifi-pumpkin")
+cd /opt/firetools
+git clone https://github.com/P0cL4bs/WiFi-Pumpkin.git
+cd WiFi-Pumpkin
+./installer.sh --install
+echo  Instalação completada  WiFi-Pumpkin + opções  | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"penbox")
+cd /opt/firetools
+git clone https://github.com/x3omdax/PenBox.git
+echo  Instalação completada   execute python penbox.py | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"xsscrapy")
+cd /opt/firetools
+git clone https://github.com/DanMcInerney/xsscrapy.git
+echo  Instalação completada   execute xsscrapy.py | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"truecrypt64x")
+cd /opt/firetools
+wget https://www.grc.com/misc/truecrypt/truecrypt-7.1a-linux-x64.tar.gz
+echo  Instalação completada | lolcat -a -d 50 
+rm -R truecrypt-7.1a-linux-x64.tar.gz
+echo " Ok  "
+read
+echo  Completar instalaçao modo Grafico | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+chmod +x truecrypt-7.1a-setup-x64
+./truecrypt-7.1a-setup-x64
+echo  Ok completado  .. execute no terminal   truecrypt | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"air-hammer")
+cd /opt/firetools
+git clone https://github.com/Wh1t3Rh1n0/air-hammer/
+echo  Ok completado  .. execute no terminal  air-hammer.py + comandos | lolcat -a -d 50
+sleep 10
+echo " Ok  "
+read
+;;
+"armitage")
+cd /opt/firetools
+wget http://www.fastandeasyhacking.com/download/armitage150813.tgz
+tar -vzxf armitage150813.tgz
+echo  Ok completado  .. execute no terminal  >>cd /opt/diretools  java -jar armitage.jar | lolcat -a -d 50
+sleep 10
+echo " Limpando "
+rm -R armitage150813.tgz
+;;
+"anonsurf")
+cd /opt/firetools
+git clone https://github.com/Und3rf10w/kali-anonsurf.git
+cd kali-anonsurf
+chmod +x installer.sh
+./installer.sh
+echo -e ‘nameserver 127.0.0.1\nnameserver 209.222.18.222\nnameserver 209.222.18.218’ > /etc/resolv.conf   
+apt-get install -f
+echo  Ok completado  .. execute no terminal  cd/opt/firetools/kali-anonsurf/kali-anonsurf-deb-src/usr/bin  anonsurf -h | lolcat -a -d 50
+echo Veja opções de execução com comando acima | lolcat -a -d 50
+echo " OK.."
+sleep 5
+;;
+"comix")
+cd /opt/firetools
+git clone https://github.com/commixproject/commix.git
+cd commix
+echo  Ok completado  .. execute no terminal  >>cd /opt/diretools  python comix.py -h | lolcat -a -d 50
+echo " ok "
+sleep 5
+;;
+"dirb")
+cd /opt/firetools
+wget https://ufpr.dl.sourceforge.net/project/dirb/dirb/2.22/dirb222.tar.gz
+tar -vzxf dirb222.tar.gz
+cd dirb222
+chmod +x configure
+./configure
+make
+meke install
+echo  Dirb  instalado  entre no diretorio cd /opt/firetools/dirb222  dirb -help | lolcat -a -d 50
+sleep 3
+echo " Limpando ..)"
+sleep 3
+cd ..
+rm -R dirb222.tar.gz
+echo " ok"
+;;
+"burpsuit")
+cd /opt/firetools
+mkdir bursuit
+cd bursuit
+wget wget https://www.dropbox.com/s/o78i9frti8croq0/burp.tar.gz?dl=0
+tar xf burp.tar.gz?dl=0
+rm -R burp.tar.gz?dl=0
+cd burp
+mv burpsuite_free_v1.6.01.jar burpsuite.jar
+echo  BURPSUIT instalado  entre no diretorio cd /opt/firetools/bursuit/burp  execute  java -jar burpsuite.jar | lolcat -a -d 50
+echo "OK "
+sleep 5
+;;
+"wpa-broteforce")
+cd /opt/firetools
+git clone https://github.com/SYWorks/wpa-bruteforcer.git
+echo ok  wpa-bruteforce instalado .. execute pelo diretorio opt/firetools/wpa-bruteforcer | lolcat -a -d 50
+echo" Ok "
+sleep 5
+;;
+"blackbox")
+cd /opt/firetools
+git clone https://github.com/darkeyepy/blackbox.git
+cd blackbox
+chmod +x install
+./install
+echo  blackbox instalado   execute pelo diretorio /opt/firetools/blackbox   blackbox -h | lolcat -a -d 50
+echo" ..OK "
+sleep 5
+;;
+"backhack")
+cd /opt/firetool
+git clone https://github.com/l0gan/backHack.git
+echo  blackhackx instalado   execute pelo diretorio /opt/firetools/blackhck   blackhack-h | lolcat -a -d 50
+echo" ..OK "
+sleep 5
+;;
+"pytherm")
+cd /opt/firetools
+git clone https://github.com/m4n3dw0lf/PytheM.git
+cd PytheM
+sudo pip install -r requirements.txt
+echo  PyterM instalado  ..  /opt/firetools  python PytheM.py -h  | lolcat -a -d 50
+echo" ..OK "
+sleep 5
+;;
+"insanity-framework")
+cd /opt/firetools
+git clone https://github.com/4w4k3/Insanity-Framework.git
+python2.7 insanity.py
+echo Insanity intalado  /opt/firetools  . python insanity.py ou python2.7 insanity.py | lolcat -a -d 50
+sleep 5
+;;
+"php-avenger") 
+curl -sS https://getcomposer.org/installer | php
+php composer.phar create-project aszone/avenger-sh
+cd avenger-sh
+echo ok .. Anvenger instalado    Obs não executar como root  $ cd avenger-sh  | lolcat -a -d 50
+echo  Exemplos   php avenger sh --dork= site:com.ar ext:sql password  | lolcat -a -d 50   
+slepp 5
+;;
+"brutexss")
+cd /opt/firetools
+git clone https://github.com/shawarkhanethicalhacker/BruteXSS.git
+echo  Ok BruteXSS  instalado execute cd /opt/firetools/BruteXSS   python brutexss.py | lolcat -a -d 50
+sleep 4
+;;
+"wifijammer")
+cd /opt/firetools
+git clone https://github.com/DanMcInerney/wifijammer.git
+echo  Ok wifijammer instalando    /opt/firetools/wifijammer  python wifijammer.py | lolcat -a -d 50
+sleep 5
+;;
+"ufonet")
+cd /opt/firetools
+sudo apt-get install python-pycurl python-geoip python-crypto
+git clone https://github.com/epsylon/ufonet
+echo  ufonet instalado     cd/opt/firetools/ufonet/ ufonet | lolcat -a -d 50
+sleep 5
+;;
+"waidps")
+cd /opt/firetools
+git clone https://github.com/SYWorks/waidps.git
+echo   waidps instalado    execute  /opt/firetools/waidps python waidps.py | lolcat -a -d 50   
+sleep 5
+;;
+"pixiescript")
+cd /opt/firetools
+wget https://www.dropbox.com/s/qpxgpllt1kq5z1v/PixieScript_v2.4.tar.gz?dl=0
+mv PixieScript_v2.4.tar.gz?dl=0 PixieScript_v2.4.tar.gz
+tar xf PixieScript_v2.4.tar.gz
+mv PixieScript_v2.4 PixieScript
+rm -R PixieScript_v2.4.tar.gz
+wget https://www.dropbox.com/s/fh07c50xnxoskfe/master.zip?dl=0
+mv master.zip?dl=0 master.zip
+unzip master.zip
+rm -R master.zip      
+cd pixiewps-master  
+cd src  
+sudo make
+sudo make install
+echo   ok   instalado ========================== Para executar  cd/opt/PixieScript e ./PixieScript.sh========= | lolcat -a -d 50
+echo   ======================================================================================================== | lolcat -a -d 50
+sleep 3
+;;
+"hashid")
+cd /opt/firetools
+git clone https://github.com/psypanda/hashID.git
+echo  Ok hashID  instalado   /opt/firetools/hashID  execute python hashid.py -h | lolcat -a -d 50
+sleep 5
+;;
+"hotspot")
+cd /opt/firetools
+git clone https://github.com/oblique/create_ap
+cd create_ap
+make install
+echo OK  instalado   execute  /opt/firetools/creat_ap   Ver exemplos em READ.me | lolcat -a -d 50
+echo Obs Ferramenta para criar   AccessPoint  | lolcat -a -d 50
+sleep 5
+;;
+"kimi")
+cd /opt/firetools
+git clone https://github.com/ChaitanyaHaritash/kimi.git
+echo ok instalando     /opt/firetools/kimi   ler exemplo  README.md | lolcat -a -d 50
+sleep 5
+;;
+"morpheus")
+cd /opt/firetools
+git clone https://github.com/r00t-3xp10it/morpheus.git
+echo  Ok Instalado      /opt/firetools/morpheus    morpheus.sh | lolcat -a -d 50
+echo  sempre dar permissão para ferramentas.sh     chmod +x ferramenta.sh | lolcat -a -d 50
+sleep 5
+;;
+"cazador")
+cd /opt/firetools
+mkdir cazador-cazado
+cd cazador-cazado
+wget https://www.dropbox.com/s/5ov1traug7l7eq0/cazador-cazado?dl=0
+mv cazador-cazado?dl=0 cazador-cazado
+chmod +x cazador-cazado
+echo Ok Instalado    /opt/firetolls/cazador  /cazador-cazado | lolcat -a -d 50
+sleep 5
+;;
+"inurlbr")
+cd /opt/firetools
+mkdir inurlbr
+cd inurlbr
+wget https://www.dropbox.com/s/rdtaypno8by7p7p/inurlbr.php?dl=0
+mv inurlbr.php?dl=0 inurlbr.php
+wget https://www.dropbox.com/s/w8rxsmrknfz1jwz/dORKS?dl=0
+mv dORKS?dl=0 dORKS
+echo  Ok  Instalado    /opt/firetools/inurlbr    ..LEia  d0RKS | lolcat -a -d 50
+sleep 5
+;;
+"shootback")
+cd /opt/firetools
+git clone https://github.com/aploium/shootback.git
+echo  Ok Instalado     /opt/firetools/shootback   .. README.md  para ver exemplos | lolcat -a -d 50
+;;
+"ploitkit")
+cd /opt/firetools
+git clone https://github.com/rajeshmajumdar/PloitKit.git
+echo  ok     instalado   /opt/firetools/PloitKit   execute >  python ploitkit.py | lolcat -a -d 50
+sleep 5
+;;
+"overtnet")
+cd /opt/firetools
+git clone https://github.com/OV3RTK1LL/OVERTNET.git
+echo  ok   overtnet instalado   cd /opt/firetools/    python overtnet.py | lolcat -a -d 50
+slepp 5
+;;
+"theHarvester")
+cd /opt/firetools
+git clone https://github.com/laramies/theHarvester.git
+echo   ok    theharvester  instalado /opt/firetools/theHarvester   execute python theHarvester.py | lolcat -a -d 50
+sleep 5
+;;
+"FakeImageExploiter")
+cd /opt/firetools
+git clone https://github.com/r00t-3xp10it/FakeImageExploiter.git
+cd FakeImageExploiter
+sudo chmod +x *.sh
+echo  Ok instalado OBS configure    nano settings   cd/opt/firetools/FakeImageExploiter   sudo ./FakeImageExploiter.sh | lolcat -a -d 50
+sleep 5
+;;
+"multiscanner")
+cd /opt/firetools
+git clone https://github.com/MITRECND/multiscanner.git
+echo ok instalado      cd /opt/firetools/multiscanner   python multiscanner.py | lolcat -a -d 50
+sleep 5
+;;
+"afl")
+cd /opt/firetools
+curl http://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz | tar xz
+mv afl-* afl
+cd afl
+make -j $(nproc)
+cd qemu_mode
+# try to detect if python2 and 3 are installed
+if which python2 >/dev/null; then
+    sed -i 's/python/python2/' ./build_qemu_support.sh
+    sed -i 's!configure!configure --python=\$(which python2)!' ./build_qemu_support.sh
+fi
+./build_qemu_support.sh
+cd ../../
+
+mkdir -p bin
+cd bin
+ln -sf ../afl/{afl-as,afl-cmin,afl-gcc,afl-gotcpu,afl-plot,afl-qemu-trace,afl-showmap,afl-tmin,afl-whatsup} .
+cd ..
+
+cat <<END > bin/afl-fuzz
+#!/bin/bash
+$PWD/afl/afl-fuzz "\$@"
+END
+chmod 755 bin/afl-fuzz
+
+#
+# multiafl
+#
+
+git clone --depth 1 https://github.com/zardus/multiafl
+cd bin
+ln -s ../multiafl/multiafl
+cd ..
+echo  flv instalado | lolcat -a -d 50
+sleep 5
+;;
+"apktool")
+cd /opt/firetools
+mkdir apk
+wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar
+mv apktool_2.2.0.jar bin/apktool.jar
+mv apktool apk/
+chmod 755 apk/apktool
+chmod 755 apk/apktool.jar
+echo  ok  aphtool  cd /opt/firetools/apktool | lolcat -a -d 50
+sleep 5
+;;
+"hashkill")
+cd /opt/firetools
+PREFIX=$PWD
+git clone --depth 1 https://github.com/gat3way/hashkill.git
+cd hashkill
+sed -i -e "s/1\.13/1\.14/g" configure
+./configure --prefix="$PREFIX" --with-json
+make -j
+make install
+echo  ok hashkill instalado  cd /opt/firetools | lolcat -a -d 50
+sleep 5
+;;
+"DirBuster")
+cd /opt/firetools
+wget https://netcologne.dl.sourceforge.net/project/dirbuster/DirBuster%20%28jar%20%2B%20lists%29/0.12/DirBuster-0.12.tar.bz2
+tar -jxvf DirBuster-0.12.tar.bz2
+echo  ok disrbuster instalado    cd /opt/firetools/DirBuster-0.12 | lolcat -a -d 50
+echo "  limpando diretorio "
+rm -R DirBuster-0.12.tar.bz2
+echo " Ok "
+sleep 5
+;;
+"netcat")
+cd /opt/firetools
+mkdir netcat
+cd netcat
+wget https://netcologne.dl.sourceforge.net/project/nc110/unix%20netcat%201.10%20by%20_Hobbit_/%5BUnnamed%20release%5D/nc110.tgz
+tar -vzxf nc110.tgz
+echo  Ok  netcat instalado | lolcat -a -d 50
+echo  limpando arquivo | lolcat -a -d 50
+rm -R nc110.tgz
+sleep 5
+;;
+"sshpass")
+cd /opt/firetools
+wget https://kent.dl.sourceforge.net/project/sshpass/sshpass/1.06/sshpass-1.06.tar.gz
+tar -vzxf sshpass-1.06.tar.gz
+rm -R sshpass-1.06.tar.gz
+cd sshpass-1.06
+./configure
+make
+make install
+echo   ok  sshpass instalado  cd /opt/firetools/sshpass-1.06  | lolcat -a -d 50
+echo "  OK "
+sleep 5
+;;
+"AutoLocalPrivilegeEscalation")
+cd /opt/firetools
+git clone https://github.com/ngalongc/AutoLocalPrivilegeEscalation.git
+echo   Ok  Instalado    /opt/firetools/AutoLocalPrivilegeEscalation | lolcat -a -d 50
+echo "  Ok ================================================="
+sleep 5
+;;
+"evilginx")
+cd /opt/firetools
+git clone https://github.com/kgretzky/evilginx.git
+echo   Ok  evilginx   cd /opt/firetools  | lolcat -a -d 50
+echo "  Ok  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "
+sleep 5
+;;
+"testdisk64x")
+cd /opt/firetools
+wget https://www.cgsecurity.org/testdisk-7.1-WIP.linux26-x86_64.tar.bz2
+tar -jxvf testdisk-7.1-WIP.linux26-x86_64.tar.bz2
+echo   Ok  testdisk instalado cd /opt/firetools/testdisk-7.1-WIP  | lolcat -a -d 50
+echo "  OK    Limpando arquivos   "
+rm -R testdisk-7.1-WIP.linux26-x86_64.tar.bz2
+echo "  Ok  "
+;;
+"webs")
+cd /opt/firetools
+mkdir web
+cd web
+wget https://www.dropbox.com/s/g97ikubdyxf1dx6/temporayWeb?dl=0
+mv temporayWeb?dl=0 temporayWeb
+rm -R temporayWeb?dl=0
+wget https://www.dropbox.com/s/oncrat8l8tozgst/zerobin?dl=0
+mv zerobin?dl=0 zerobin
+rm -R zerobin?dl=0
+echo "  ok  webs instalado "
+echo  ATENCAO    Para executar os scripst devera ter FIREFOX instalado | lolcat -a -d 50
+echo "  OK   "
+sleep 7
+;;
+"kumonga")
+cd /opt/firetools
+git clone https://github.com/0verl0ad/kum0nga.git
+echo kumonga instalado  entre em  /optfiretools/ | lolcat -a -d 50
+sleep 5
+;;
+"blindy")
+cd /opt/firetools
+git clone https://github.com/missDronio/blindy.git
+echo Ok  blindy instlado   execute  /opt/firetools/blynd | lolcat -a -d 50
+sleep 5
+;;
+"weevely")
+cd /opt/firetools
+git clone https://github.com/epinna/weevely3.git
+echo  Ok  weevely instalado /cd/opt/firetools | lolcat -a -d 50
+sleep 5
+;;
+"leviathan")
+cd /opt/firetools
+git clone https://github.com/leviathan-framework/leviathan.git
+echo instalando dependencias | lolcat -a -d 50
+cd leviathan
+pip install -r requirements.txt
+echo ok  leviathan instalado   opt/firetools/leviathan | lolcat -a -d 50
+sleep 5
+;;
+"WhatWeb")
+cd /opt/firetools
+git clone https://github.com/urbanadventurer/WhatWeb.git
+make
+echo   ok  whatweb instaldo  cd/opt/firetools/whatweb | lolcat -a -d 50
+sleep 5
+;;
+"pupy")
+cd /opt/firetools
+git clone https://github.com/n1nj4sec/pupy.git pupy
+cd pupy
+git submodule init
+git submodule update
+pip install -r pupy/requirements.txt
+echo pupy instalado como sucesso  .. cd/opt/firetools/pupy | lolcat -a -d 50
+sleep 5
+;;
+"osrframework")
+cd /opt/firetools
+git clone https://github.com/i3visio/osrframework
+pip install osrframework
+pip install osrframework --upgrade
+echo ok instalado cd /opt/firetools//osrframework | lolcat -a -d 50
+echo  EXEMPLOS  VIDEO  https://www.youtube.com/watch?time_continue=671&v=16JeQZbwZEA | lolcat -a -d 50
+sleep 5
+;;
+"p0f")
+cd /opt/firetools
+git clone https://github.com/skord/p0f.git
+cd p0f
+make
+echo ok instalado  cd /opt/firetools/p0f | lolcat -a -d 50
+echo exemplos   ./p0f -i sua placa  /ip  | lolcat -a -d 50
+sleep 5
+;;
+"Snorter")
+cd /opt/firetools
+git clone https://github.com/joanbono/Snorter
+cd Snorter/src
+chmod +x Snorter.sh
+echo ok snorter instalado cd /opt/firetools/Snorter/src | lolcat -a -d 50
+echo excute Snorter.sh -o  -i | lolcat -a -d 50
+sleep 5
+;;
+"routersploit")
+cd /opt/firetools
+git clone https://github.com/reverse-shell/routersploit.git
+cd routersploit
+pip install -r requirements.txt
+./rsf.py
+echo  ok instalado  cd /opt/firetools/routersploit | lolcat -a -d 50
+echo   ver  exemplo https://asciinema.org/a/8u75xcjuacnbpwz9feaixde9e?autoplay=1 | lolcat -a -d 50
+sleep 5
+;;
+"brutespray")
+cd /opt/firetools
+git clone https://github.com/x90skysn3k/brutespray.git
+echo ok  brutespray instalado  | lolcat -a -d 50
+sleep 5
+;;
+"dagon")
+cd /opt/firetools
+git clone https://github.com/ekultek/dagon.git
+cd Dagon
+echo  ok dagon instalado entre no diretoio /opt/firetools/dagon | lolcat -a -d 50
+sleep 5
+;;
+"pybelt")
+cd /opt/firetools
+git clone https://github.com/ekultek/pybelt.git
+cd pybelt
+pip install -r requirements.txt
+echo ok  pybelt instalado cd/opt/firetools/pybelt | lolcat -a -d 50
+sleep 5
+;;
+"shodan")
+cd /opt/firetools
+echo Atenção para executar shodan via terminal deve se criar uma conta | lolcat -a -d 50
+echo e criar um API-KEy .. e em seguida executar pelo seu terminal | lolcat -a -d 50
+echo shodan init + seu API-KEy   Guarde bem o API-Key  para usar | lolcat -a -d 50
+echo sempre que executar ou reinstalar o shodan | lolcat -a -d 50
+echo criar key aqui https://account.shodan.io/login | lolcat -a -d 70
+echo Instalando ..... shodan    ok  | lolcat -a -d 70
+sleep 7 
+easy_install -U shodan
+echo  ok  intalado  | lolcat -a -d 50
+sleep 5
+echo criar o API-KEY .. caso não tenha o firefox copie a URL acima | lolcat -a -d 70
+echo e cole no seu navegador favorito  | lolcat -a -d 50
+firefox https://account.shodan.io/login
+sleep 5 
+;;
+"massExpConsole")
+cd /opt/firetools
+git clone https://github.com/jm33-m0/massExpConsole.git
+echo  instalado   opt/firetools/massExpConsole  execute  python3 men.py | lolcat -a -d 50
+sleep 5
+;;
+"portSpider")
+cd /opt/firetools
+sudo apt-get update && sudo apt-get install python3 python3-pip -y
+git clone https://github.com/xdavidhu/portSpider
+cd portSpider/
+python3 -m pip install -r requirements.txt
+echo ok   execute no diretotio   portSpider -h | lolcat -a -d 50
+sleep 5
+;;
+"Brutesploit")
+cd /opt/firetools
+git clone https://github.com/Screetsec/Brutesploit.git
+cd Brutesploit
+chmod +x Brutesploit
+echo ok  brutesploit instalado .   cd/opt/firetools/Brutesploit  lolcat -a -d 50
+sleep 5
+;;
+"getsploit")
+cd opt/firetools
+git clone https://github.com/vulnersCom/getsploit
+echo  ok   instalado | lolcat -a -d 50
+sleep 5
+;;
+"bs4_chat")
+cd /opt/firetools
+git clone https://github.com/pauleveritt/bs4_chat.git
+cd bs4_chat
+npm install
+npm install -g browser-sync
+echo  Simple Bootstrap 4 chat | lolcat -a -d 50
+echo executar a onde esta o projeto diretorio site site browser-sync start --server --files "css/*.css"   automdk3 | lolcat -a -d 50
+sleep 5
+;;
+"automdk3")
+cd /opt/firetools
+git clone https://github.com/Yokai-Seishinkage/Auto-mdk3_v02.git
+echo  Ok Instaladonexecute /opt/firetools   de permissão >> chmod +x automdk3   >>  ./automdk3 | lolcat -a -d 50
+sleep -5
+;;
+"sniper")
+cd /opt/firetools
+git clone https://github.com/1N3/Sn1per.git
+cd Sn1per
+chmod +x install.sh
+echo ok instalado   cd/opt/firetools  leia README.md | lolcat -a -d 50
+sleep 5
+;;
+"xsser")
+cd /opt/firetools
+wget http://xsser.03c8.net/xsser/xsser_1.7-1.tar.gz
+tar xf xsser_1.7-1.tar.gz
+cd xsser_1.7-1
+cd xsser-public
+python setup.py install
+./xsser -h
+echo ok  xsser instalado .. cd /opt/firetools | lolcat -a -d 50
+sleep 5
+;;
+"Microsploit")
+cd /opt/firetools
+git clone https://github.com/Screetsec/microsploit.git
+cd Microsploit
+chmod +x Microsploit
+echo ok instalado | lolcat -a -d 50
+sleep 5
+;;
+"RED_HAWK")
+cd /opt/firetools
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+cd RED_HAWK
+echo ok instalado cd /opt/firetools/ php rhawk.php | lolcat -a -d 50
+sleep 5
+;;
+"spade")
+cd /opt/firetools
+git clone https://github.com/suraj-root/spade.git
+cd spade/
+python spade.py
+echo Para executar esta ferramenta deve -se ter o metasploit instalado | lolcat -a -d 50
+echo  Clone um um arquivo.apk e execute as opções  | lolcat -a -d 50
+echo  Ver instriçoes aqui 
+lynx -dump -nolist https://securityonline.info/spade-apk-backdoor-embedder/
+echo ok | lolcat -a -d 50 
+sleep 5
+;;
+"johnny-gui")
+cd /opt/firetools
+sudo apt-get install g++ git qtbase5-dev
+git clone https://github.com/shinnok/johnny.git && cd johnny
+git checkout v2.2 # switch to the desired version
+export QT_SELECT=qt5
+qmake && make -j$(nproc)
+echo ok johnny-gui instalado    execute  ./johnny | lolcat -a -d 50
+echo Aguarde teste .................................................... | lolcat -a -d 50
+./johnny
+sleep 5
+;;
+"CIAHackingTools")
+cd /opt/firetools
+git clone https://github.com/troydo42/CIAHackingTools.git
+echo  ok  baixado  | lolcat -a -d 50
+sleep 5
+;;
+"dnsenum")
+cd /opt/firetools
+echo Esta ferramenta deve se instalada manualmete devido a alguma restrinções | lolcat -a -d 50
+echo Siga este manual  ok .. | lolcat -a -d 50
+lynx -dump -nolist techinquiry.altervista.org/installare-dnsenum-in-debian
+sleep -15
+;;
+"Powerfuzze")
+cd /opt/firetools
+wget https://ufpr.dl.sourceforge.net/project/powerfuzzer/powerfuzzer/v1%20BETA/powerfuzzer_v1_beta_patched.zip
+echo  ok  Powerfuzze  instalado    cd /opt/firetools/  execute  python powerfuzze.py | lolcat -a -d 50
+sleep 5
+;;
+"A2SV")
+cd /opt/firetools
+cd a2sv
+git clone https://github.com/hahwul/a2sv.git
+pip install argparse
+pip install netaddr
+apt-get install openssl
+echo ok  instalado  cd /opt/firetools  python a2sv.py -h
+sleep 5
+;;
+"ad-ldap-enum")
+cd /opt/firetools
+pip install python-ldap
+pip install ldap
+git clone https://github.com/CroweCybersecurity/ad-ldap-enum.git
+echo Ok instalado  cd /opt/firetools python ad-ldap-enum.py -h | lolcat -a -d 50
+sleep 5
+;;
+"adfind")
+cd /opt/firetools
+git clone https://github.com/sahakkhotsanyan/adfind.git
+cd adfind
+cp adfind /bin/adfind
+chmod +x /bin/adfind
+echo Ok instalado cd /opt/firetools/adfind   Use adfind http://example.com all | lolcat -a -d 50
+sleep 7
+;;
+"anti-XSS")
+cd /opt/firetools
+git clone https://github.com/lewang2333/anti-XSS.git
+cd anti-XSS
+pip install -r requirements.txt
+echo ok  instalado  cd /opt/firetools/anti-XSS  Usar python anti-XSS.py -h | lolcat -a -d 50
+sleep 5 
+;;
+"shodanwave")
+cd /opt/firetools
+git clone https://github.com/fbctf/shodanwave.git
+cd shodanwave
+pip install -r requirements.txt
+echo Atençao para usar esta ferramenta devera ter o shodan instalado no sistema ..Veja instalaçao  neste script | lolcat -a -d 50
+echo Usage: python shodanwave.py -u usernames.txt -w passwords.txt  -k Shodan API key  | lolcat -a -d 50
+echo python shodanwave.py --help | lolcat -a -d 50
+sleep 5
+;;
+"chaos")
+cd /opt/firetools
+apt-get install golang upx-ucl -y
+git clone https://github.com/tiagorlampert/CHAOS.git
+echo video demonstarção   https://www.youtube.com/watch?v=QRNN2KwCYOg | lolcat -a -d 75
+sleep 5
+;;
+"AhMyth-Android-RAT64x")
+cd /opt/firetools
+wget https://www.dropbox.com/s/9bzyizx40qgz6yt/AhMyth_linux64.deb?dl=0
+mv AhMyth_linux64.deb?dl=0 AhMyth_linux64.deb
+dpkg -i AhMyth_linux64.deb
+echo limpando diretorio | lolcat -a -d 50
+rm -R AhMyth_linux64.deb
+echo ok   exete terminal ahmyth | lolcat -a -d 50
+ok  Video Tutorial https://www.youtube.com/watch?v=DDIZTABABzs  lik  https://github.com/AhMyth/AhMyth-Android-RAT | lolcat -a -d 75
+sleep -5
+;;
+"XSStrike")
+cd /opt/firetools
+git clone https://github.com/UltimateHackers/XSStrike/
+cd XSStrike
+pip install -r requirements.txt
+echo ok    execute  python xsstrike | lolcat -a -d 50
+sleep 5
+;; 
+"Hash-Buster")
+cd /opt/firetools
+git clone https://github.com/UltimateHackers/Hash-Buster.git
+echo ok instalado  user python hash.py | lolcat -a -d 50
+sleep 5
+;;
+"Maid_Evil")
+cd /opt/firetools
+git clone https://github.com/GDSSecurity/EvilAbigail.git
+echo   instalado  execute evilmaid.py | lolcat -a -d 50
+sleep 5
+;;
+"cancelar")
+        # ...
+        # ...           
+    ;;
+
+    *)
+        echo  "Opção inválida."
+    ;;
+esac
+          
+          ;;
+        4)
+          break;;
+
+       *) break ;;
+
+   esac
+
+done
+
+   
+else
+    echo " Rsk@b33ll0 exploirun"
+    echo " Rsk@b33ll0 exploirun"
+    echo " saindo..."
+    exit 0
+fi 
+           ;;
+        2) killall mpv
+           echo ""
+            x="teste"
+menu ()
+{
+while true $x != "teste"
+do
+clear; tput cup 8 8; for i in $(seq 1 2); do echo -n "$((3-$i)) ";sleep 1; done; tput cup 10 8; echo -e "DONE\n\n"
+tput setf 4
+sleep 2
+echo   =========================================  VISITE   http://terminalclub.github.io/ =======================| lolcat -a -d 120
+clear
+echo "                sdNNNNds.    "           
+echo "              sMMMMMMModMy  "           
+echo "              NMMNMMMNNNMMs   "          
+echo "              N  oMm  oMMN   "         
+echo "              msm ho+Ny NMN    "        
+echo "              hsNNMNMMyomMM/      "      
+echo "             sohddhhhhomhyd      "      
+echo "             /N.-oys+.  +NdMd.     "     
+echo "            om/          oMMMN/     "    
+echo "          -mMy            yMMMMs   "    
+echo "         /NMh:             dNmNMd   "   
+echo "         mds   LINUX        NMyNMd    "  
+echo "       -Ndh                 oMNhMMs    " 
+echo "       mMm:    CONFIG       /MmhMMN    "
+echo "       sy+.                  hmmmd    "
+echo "     .yMMN+-.                +Nh+MMh+y    "
+echo "    oydNMMMMMdoh/           sMMdyydMM+    "
+echo " .NMMMMMMMMMNods          yMMMMMMMMMd+ "
+echo "  NMMMMMMMMMMMs        -s/mMMMMMMMMMMN/ "
+echo " .MMMMMMMMMMMMMh-ssshdNMM/MMMMMMMMms:   "
+echo "  .:+oyhmMMMMMMh.++++++++-NMMMMNs-      "
+echo "        -+oo-           -+oo/    "
+echo ""
+echo "1)Qual programa deseja instalar ?"
+echo""
+echo "2)Qual programa deseja remover ?"
+echo ""
+echo "3)Vamos atulizar o sistema ?"
+echo ""
+echo "4)Vamos atualizar dependencias?"
+echo""
+echo "5)Vamos limpar Linux "
+echo""
+echo "6)Vamos corrigir alguns erros ?"
+echo""
+echo "7)RESOLVENDO TECLADO P/ PORTUGUES abnt2"
+echo""
+echo "8)VERIFICAR VERSÃO DO SISTEMA"
+echo""
+echo "9)INFORMAÇÃO SLOT MEMORIA RAM"
+echo""
+echo "10)VER PROCESSOS DO SISTEMA"
+echo""
+echo "11)VERIFICAR PORTAS TCP"
+echo""
+echo "12)VERIFICAR PORTAS UNP"
+echo""
+echo "13)PLACAS DE REDE"
+echo""
+echo "14)IP EXTERNO"
+echo""
+echo "15)MONITOR DE REDE"
+echo""
+echo "16)Sair do programa"
+echo ""
+echo "================================================"
+
+echo "Digite a opção desejada:"
+read x
+echo "Opção informada ($x)"
+echo "================================================"
+
+case "$x" in
+
+
+    1)
+      echo "Informe o nome do pacote para ser instalado?"
+      read nome
+      apt-get install $nome
+      sleep 5
+
+echo "================================================"
+;;
+    2)
+      echo "Informe o nome do pacote para ser removido?"
+      read nome
+      apt-get remove --purge $nome
+      sleep 5
+echo "================================================"
+;;
+   3)
+      echo "Atualizando sistema..."
+      apt-get update
+      sleep 5
+echo "================================================"
+;;
+    4)
+       echo "Iniciando o processo..."
+       apt-get -f install
+       sleep 5
+echo "================================================"
+;;
+     5)
+       echo "Corrigindo erros..."
+       apt-get autoremove
+       sleep 5
+echo "================================================"
+;;
+    6)
+    echo "Reparando..."
+    dpkg --configure -a
+    sleep 5
+
+echo "================================================"
+ ;;
+       
+  7)
+    echo ""
+    setxkbmap -model pc104 -layout br -variant abnt2 
+    sleep 5
+
+echo "================================================"
+ ;;      
+     
+   8)
+    echo ""
+    uname -a
+    sleep 5
+
+echo "================================================"
+ ;;   
+      
+  9)
+    echo ""
+    dmidecode -t memory
+    sleep 5
+
+echo "================================================"
+ ;;     
+     
+   10)
+    echo " Para terminar processo >> Ctrl + c "
+                    sleep 5
+                    clear
+                    top
+                    echo " Enter p/ voltar ao menu" 
+                    read
+                     
+echo "================================================"
+ ;;   
+      
+   11)
+    clear
+     netstat -tnp 
+     echo " Enter p/ voltar ao menu"
+     read
+
+echo "================================================"
+ ;;    
+      
+   12)
+    netstat -unp 
+    echo " Enter p/ voltar ao menu"
+    read
+    sleep 5
+
+echo "================================================"
+ ;;    
+     
+  13)
+    ifconfig
+    echo " Enter p/ voltar ao menu"
+    read
+
+echo "================================================"
+ ;;    
+         
+   14)
+    clear
+    curl ifconfig.me
+    echo " Enter p/ voltar ao menu"
+    read
+
+echo "================================================"
+ ;;    
+      
+   15)
+    clear
+    echo " Precione tecla  Q para sair "
+    sleep 6
+    bmon 
+
+echo "================================================"
+ ;;    
+       16)
+         echo "saindo..."
+         sleep 5
+         clear;
+         break;;
+
+       *) break ;;
+
+   esac
+
+done
+
+echo "================================================"
+
+
+       }
+menu
+            ;;
+        3) killall mpv
+           echo""
+           sleep 5        
+           xterm /opt/.sheat
+           
+           
+          ;;
+    esac
+    done
+else
+    echo " Rsk@b33ll0 exploirun"
+    echo " Rsk@b33ll0 exploirun"
+    echo " saindo..."
+    exit 0
+fi 
