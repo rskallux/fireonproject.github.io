@@ -95,6 +95,7 @@ case $CONFIRMA in
         sudo apt-get install nodejs npm
         sudo apt-get install nodejs-legacy
         gem bundle install
+        apt install phpmyadmin -y
         #criando diretorio firetools
         mkdir /opt/firetools
         # Instalando mdk3         
