@@ -76,16 +76,17 @@ if [ -e $exploit ]; then
     read choix
     case $choix in
         1) 
-         echo " Atenção .. ao executar esta opição sera instalado automaticamete as ferramentas nativas do sistema "
-         echo " Basta procurar no terminal ou no gerenciador de menu. As ferramentas externas estara na opição Install ferramentas"
+         echo " Atenção .. ao executar esta opção sera instalado automaticamente as ferramentas nativas do sistema "
+         echo " Basta procurar no terminal ou no gerenciador de Menu. As ferramentas externas estará na opição Install ferramentas"
          echo " Ferramenta nativas são .. aircrack - reaver-wifite-kismet-nmap-nikto-wireshark-znmap-hidra-gtk-medusa-wapiti-tshark-dansguardian"
-         echo " Obs  Algumas ferramentas de rede pedira nas instalação a execução como root .. opite pelo opiçao.  NÂO"
+         echo " Obs  Algumas ferramentas de rede pedirá nas instalação a execução como root .. opite pelo opiçao.  NÂO"
          echo "Aviso :Instalação demorada .Importante ter uma boa conexão         Confirmar?... (s/n)"
          read CONFIRMA
 
 case $CONFIRMA in 
     "s")
         # ...
+        mkdir /opt/firetools
         sleep 2s && notify-send "Ok" "Aguarde ......"
         sudo apt-get update -y
         sudo apt-get upgrade -y
