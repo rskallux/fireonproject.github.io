@@ -206,7 +206,7 @@ esac
           p(){ c=$(($(tput cols)-3));j=$(($1*c/100)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=100; i++));do p i;done;echo
            read
            clear
-           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/"
+           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/airset/"
            read CONFIRMA
 
 case $CONFIRMA in 
@@ -1134,6 +1134,17 @@ cd /opt/firetools
 git clone https://github.com/neoneggplant/EggShell && cd EggShell
 easy_install pycrypto
 echo ok instalado   execute python eggshell.py | lolcat -a -d 50
+sleep 5
+;;
+"airset")
+cd /opt/firetools
+git clone https://github.com/alefcarvalho/airset.git
+unzip airset-master.zip
+cd airset-master
+unzip airset.zip
+cd airset
+chmod +x airset
+echo ok instalado   execute ./airset no direorio | lolcat -a -d 50
 sleep 5
 ;;
 "cancelar")
