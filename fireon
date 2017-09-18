@@ -207,7 +207,7 @@ esac
           p(){ c=$(($(tput cols)-3));j=$(($1*c/100)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=100; i++));do p i;done;echo
            read
            clear
-           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/airset/mpc/crowbar/"
+           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/airset/mpc/crowbarreaver-wps-fork-t6x/"
            read CONFIRMA
 
 case $CONFIRMA in 
@@ -1162,6 +1162,29 @@ apt-get -y install openvpn freerdp-x11 vncviewer
 git clone https://github.com/galkan/crowbar.git
 echo crowler instalado entre no diretotio e execute crowler -h | lolcat -a -d 50
 slelep 5
+;;
+"reaver-wps-fork-t6x")
+echo Atençao reaver ja foi instalado no modo nativo na primeira atualização.Caso decida instalar reaver-wps devera | lolcat -a -d 50
+echo desisntalar reaver instalado nativamente pelo synaptic ou  .. apt-get remove rever | lolcat -a -d 50
+sleep 2
+cd /opt/firetools
+git clone https://github.com/t6x/reaver-wps-fork-t6x
+cd reaver-wps-fork-t6x*/
+cd src/
+./configure
+make
+sudo make install
+apt-get install libpcap-dev
+apt-get install libpcap-dev
+apt-get install libsqlite3-dev
+cd /opt/firetools
+git clone https://github.com/wiire/pixiewps
+cd pixiewps*/
+cd src/
+make
+sudo make install
+echo ok .. instalado entre no diretorio firetools execute reaver-wps-fork-t6x -h | lolcat -a -d 50
+sleep 5
 ;;
 "cancelar")
         # ...
