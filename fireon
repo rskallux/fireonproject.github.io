@@ -1242,6 +1242,7 @@ git clone https://github.com/securingsam/krackdetector.git
 echo  krackdetector instalado   cd/opt/firetools/krackdetector/   cat README.md instruttion | lolcat -a -d 50
 sleep 5
 ;;
+"Evil-Droid")
 cd /opt/firetools
 git clone https://github.com/M4sc3r4n0/Evil-Droid.git
 cd Evil-Droid
