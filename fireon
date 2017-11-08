@@ -6,7 +6,7 @@ NC='\e[0m'
 clear
 echo "Hello $(whoami) !================================= Qualquer tecla para continuar ========================================" 
 screen -d -m mpv http://los.cdnstream.com:80/crs64k
-aafire
+#aafire no mid
 sleep 5
 # Especificando o WEB a ser utilizado.
 PLAYER="web"
