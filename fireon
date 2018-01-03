@@ -1282,6 +1282,8 @@ sleep 5
 "sqliv")
 cd /opt/firetools
 git clone https://github.com/Hadesy2k/sqliv.git
+cd sqliv
+pip install -r requirements.txt
 echo ok  sqliv instalado .. cd /opt/firetols/sqliv     README.md  | lolcat -a -d 50
 sleep 5
 ;;
