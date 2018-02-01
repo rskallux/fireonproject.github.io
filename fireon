@@ -207,7 +207,7 @@ esac
           p(){ c=$(($(tput cols)-3));j=$(($1*c/100)); tput sc;printf "[$(for((k=0;k<j;k++));do printf "=";done;)>";tput cuf $((c-j));printf "]";tput rc; };for((i=0; i<=100; i++));do p i;done;echo
            read
            clear
-           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/airset/mpc/crowbarreaver-wps-fork-t6x/brutespray/dbeaver64x/dbeaver32x/apt2.py/hURL/trape/striker/krackdetector/Evil-Droid/relayer/whatwaf/fsociety/kickthemout/sqliv/minergate/meterpreter-paranoid-mode/vegile/"
+           echo "Digite nome da ferramenta a ser instalada  ou cancelar --->>>  (sqlmap/metasploit64x/metasploit32x/torbrowser64x/torbrowser32x/uniscan/fluxion/setoolkit/beef/maltego/backdoor-factory/recon-ng/veil-evasion/wifiphisher/Brutal/slowloris/wifi-pumpkin/penbox/xsscrapy/truecrypt64x/air-hammer/armitage/anonsurf/comix/dirb/burpsuit/wpa-broteforce/blackbox/backhack/pytherm/insanity-framework/php-avenger/brutexss/wifijammer/ufonet/waidps/pixiescript/hashid/hotspot/kimi/morpheus/cazador/inurlbr/shootback/ploitkit/overtnet/theHarvester/FakeImageExploiter/multiscanner/afl/apktool/hashkill/DirBuster/netcat/sshpass/AutoLocalPrivilegeEscalation/evilginx/testdisk64x/webs/kumonga/blindy/weevely/air-Hammer/leviathan/WhatWeb/pupy/osrframework/p0f/Snorter/routersploit/brutespray/dagonq/pybelt/shodan/massExpConsole/portSpider/Brutesploit/getsploit/bs4_chat/automdk3/sniper/xsser/Microsploit/RED_HAWK/spade/johnny-gui/CIAHackingTools/dnsenum/Powerfuzze/A2SV/ad-ldap-enum/adfind/anti-XSS/shodanwave/chaos/AhMyth-Android-RAT64x/XSStrike/Hash-Buster/cancelar/Maid_Evil/EggShell/airset/mpc/crowbarreaver-wps-fork-t6x/brutespray/dbeaver64x/dbeaver32x/apt2.py/hURL/trape/striker/krackdetector/Evil-Droid/relayer/whatwaf/fsociety/kickthemout/sqliv/minergate/meterpreter-paranoid-mode/vegile/SocialFish/"
            read CONFIRMA
 
 case $CONFIRMA in 
@@ -1316,6 +1316,16 @@ cd Vegile
 chmod +x Vegile
 echo ok.. instalado  | lolcat -a -d 50
 echo video demo https://www.youtube.com/watch?time_continue=80&v=oYyH1G3Lsvo | lolcat -a -d 50
+sleep 10
+;;
+"SocialFish")
+cd /opt/firetools
+git clone https://github.com/UndeadSec/SocialFish.git
+cd SocialFish
+sudo pip install -r requirements.txt
+python SocialFish.py
+echo ok ..instalado   | lolcat -a -d 50  
+echo Tutorial >>  https://www.youtube.com/watch?v=mj6nnD5zzaE&feature=youtu.be | lolcat -a -d 50
 sleep 10
 ;;
 "cancelar") 
